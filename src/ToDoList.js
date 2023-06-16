@@ -39,7 +39,7 @@ export default class TodoList {
 
     displayItems = () => {
       this.clearList();
-      this.todos.forEach(todo => {
+      this.todos.forEach((todo) => {
         const todoItem = document.createElement('li');
         todoItem.classList.add('todo_item');
         todoItem.classList.add('border_bottom');
