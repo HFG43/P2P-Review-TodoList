@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List!</title> 
+<script defer src="index.bundle.js"></script></head>
+<body>
+    <header></header>
+    <section class="background">
+        <div class="section_todo bg_colour">
+            <div class="title_container border_bottom">
+                <h1>Today's To Do</h1>
+                <button type="button" id="reload" class="bg_colour"><img class="reload"/></button>             
+            </div>
+            <div class="input_container border_bottom">
+                <input type="text" class="description" id="description" placeholder="Add to your list...">
+                <div> <img class="enter_icon" alt="Enter Icon"/></div>                
+            </div>
+            <ul id="todo_list" class="border_bottom">
+
+            </ul>
+            <div id="clear_all">
+              <button type="button" id="clear_all_button">Clear all completed</button>
+            </div>
+        </div>
+    </section>   
+</body>
+</html>

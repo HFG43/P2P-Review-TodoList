@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  background-color: #f5f1f1;
+}
+
+.bg_colour {
+  background-color: #fff;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #d8dad8;
+}
+
+.section_todo {
+  margin: 3.125rem 10% 0 10%;
+  box-shadow: 5px 5px 5px #d8dad8;
+}
+
+#todo-list {
+  padding: 1rem 0.75rem;  
+}
+
+.title_container {
+  padding: 1.25rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#reload {
+  outline: none;
+  border: none;
+}
+
+ .reload {
+  height: 20px;
+  width: auto;
+  margin-right: 1.875rem;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-style: italic;
+  width: 100%;
+  padding: 1.25rem 0.75rem;
+  border-style: none;
+}
+
+.enter_icon {
+  height: 20px;
+  width: auto;
+  margin-right: 2.5rem;
+}
+
+.todo_item {
+  display: flex;
+  align-items: center;
+  padding: 0.9375rem 0;  
+  position: relative;
+}
+
+.checkbox {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.trash {
+  height: 30px;
+  width: auto;
+  position: absolute;
+  left: 90%;
+}
+
+.threedots {
+  height: 30px;
+  color: #d8dad8;
+  position: absolute;
+  left: 90%;
+}
+
+#clear_all_button {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #edeeed;
+  font-size: 1.3rem;
+  width: 100%;
+  border: 0;
+}
+
+#clear_all_button:hover {
+  text-decoration: underline;
+}
