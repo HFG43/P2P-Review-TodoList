@@ -39,15 +39,14 @@ export default class TodoList {
 
     displayItems = () => {
       this.clearList();
-      for (let i = 0; i < this.todos.length; i += 1) {
-        const todo = this.todos[i];
+      this.todos.forEach(todo => {
         const todoItem = document.createElement('li');
         todoItem.classList.add('todo_item');
         todoItem.classList.add('border_bottom');
 
         const check = document.createElement('input');
         check.type = 'checkbox';
-        check.id = this.todos[i].index;
+        check.id = todo.index;
         check.classList.add('checkbox');
         if (todo.completed === true) {
           check.checked = true;
@@ -66,7 +65,7 @@ export default class TodoList {
         trashIcon.src = Trash;
         trashIcon.classList.add('trash');
         todoItem.appendChild(trashIcon);
-        trashIcon.id = this.todos[i].index;
+        trashIcon.id = todo.index;
 
         this.todoList.appendChild(todoItem);
 
@@ -83,12 +82,12 @@ export default class TodoList {
             this.displayItems();
           } else {
             const editedDescription = editDescription.value;
-            this.todos[i].description = editedDescription;
+            todo.description = editedDescription;
             localStorage.setItem('todo', JSON.stringify(this.todos));
             this.displayItems();
           }
         });
-      }
+      });
       this.removeSelectItem();
       const intro = document.querySelector('.enter_icon');
       intro.src = introIcon;
@@ -112,9 +111,10 @@ export default class TodoList {
       const itemPosition = Number(event.target.id);
       const toRemoveItem = this.todos.filter((task) => task.index !== itemPosition);
       this.todos = [...toRemoveItem];
-      for (let i = 0; i < this.todos.length; i += 1) {
-        this.todos[i].index = i + 1;
-      }
+      this.todos.forEach((task, index) => {
+        task.index = index + 1;
+      });
+
       localStorage.setItem('todo', JSON.stringify(this.todos));
       this.displayItems();
     }
