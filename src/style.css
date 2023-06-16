@@ -9,20 +9,25 @@ html {
   background-color: #f5f1f1;
 }
 
-.section_todo {
-  margin: 50px 10% 0 10%;
+.bg_colour {
   background-color: #fff;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #d8dad8;
+}
+
+.section_todo {
+  margin: 3.125rem 10% 0 10%;
   box-shadow: 5px 5px 5px #d8dad8;
 }
 
 #todo-list {
-  padding: 16px 12px;
-  border-bottom: 1px solid #d8dad8;
+  padding: 1rem 0.75rem;  
 }
 
 .title_container {
-  border-bottom: 1px solid #d8dad8;
-  padding: 20px 12px;
+  padding: 1.25rem 0.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,19 +36,17 @@ html {
 #reload {
   outline: none;
   border: none;
-  background-color: #fff;
 }
 
-.reload {
+ .reload {
   height: 20px;
   width: auto;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .input_container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #d8dad8;
 }
 
 input[type="text"]:focus {
@@ -54,27 +57,26 @@ input[type="text"]:focus {
   font-size: 1.2rem;
   font-style: italic;
   width: 100%;
-  padding: 20px 12px;
+  padding: 1.25rem 0.75rem;
   border-style: none;
 }
 
 .enter_icon {
   height: 20px;
   width: auto;
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 .todo_item {
   display: flex;
   align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid #d8dad8;
+  padding: 0.9375rem 0;  
   position: relative;
 }
 
 .checkbox {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .completed {
@@ -97,7 +99,7 @@ input[type="text"]:focus {
 
 #clear_all_button {
   text-align: center;
-  padding: 24px;
+  padding: 1.5rem;
   background-color: #edeeed;
   font-size: 1.3rem;
   width: 100%;

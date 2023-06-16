@@ -43,6 +43,7 @@ export default class TodoList {
         const todo = this.todos[i];
         const todoItem = document.createElement('li');
         todoItem.classList.add('todo_item');
+        todoItem.classList.add('border_bottom');
 
         const check = document.createElement('input');
         check.type = 'checkbox';
